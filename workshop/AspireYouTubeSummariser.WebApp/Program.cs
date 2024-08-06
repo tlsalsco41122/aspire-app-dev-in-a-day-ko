@@ -12,10 +12,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 // builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(p => p.BaseAddress = new Uri("http://localhost:5050"));
-builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(p => {
-    p.BaseAddress = new Uri("https+http://apiapp");
-    p.Timeout = TimeSpan.FromSeconds(200);
-});
+builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(p => p.BaseAddress = new Uri("https+http://apiapp"));
 
 var app = builder.Build();
 
