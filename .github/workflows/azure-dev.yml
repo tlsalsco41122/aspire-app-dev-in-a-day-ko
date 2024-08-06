@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - master
+      
     # 아래 두 줄 추가 👇
     paths:
       - 'workshop/**/*'
