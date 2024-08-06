@@ -14,4 +14,5 @@ builder.AddProject<Projects.AspireYouTubeSummariser_WebApp>("webapp")
        .WithReference(cache)
        .WithReference(apiapp);
 
+// 제발 성공해주라
 builder.Build().Run();
