@@ -1,6 +1,3 @@
-@using AspireYouTubeSummariser.WebApp.Clients
-@inject IApiAppClient ApiApp
-
 <div class="container">
     <div class="row">
         <h2>YouTube Summariser</h2>
@@ -56,24 +53,11 @@
 
     private async Task SummariseAsync()
     {
-        try
-        {
-            var result = await ApiApp.SummariseAsync(youTubeLinkUrl, videoLanguageCode, summaryLanguageCode);
-            summaryResult = result;
-        }
-        catch (Exception ex)
-        {
-            summaryResult = ex.Message;
-        }
+        throw new NotImplementedException();
     }
 
     private async Task ClearAsync()
     {
-        youTubeLinkUrl = string.Empty;
-        videoLanguageCode = "en";
-        summaryLanguageCode = "en";
-        summaryResult = string.Empty;
-
-        await Task.CompletedTask;
+        throw new NotImplementedException();
     }
 }
