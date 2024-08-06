@@ -13,5 +13,5 @@ builder.AddProject<Projects.AspireYouTubeSummariser_WebApp>("webapp")
        .WithExternalHttpEndpoints()
        .WithReference(cache)
        .WithReference(apiapp);
-
+// 테스트하려고 넣은 주석
 builder.Build().Run();
